@@ -11,8 +11,10 @@ public class SimpleMath
         int b = scan.nextInt();
         int addResult = addition(a, b);
         int subResult = subtraction(a, b);
+        int multResult = multiplication(a, b);
         System.out.println(a + " + " + b + " = " + addResult);
         System.out.println(a + " - " + b + " = " + subResult);
+        System.out.println(a + " * " + b + " = " + multResult);
     }
 
     private static int addition(int a, int b)
@@ -23,5 +25,10 @@ public class SimpleMath
     private static int subtraction(int a, int b)
     {
         return a - b;
+    }
+    
+    private static int multiplication(int a, int b)
+    {
+        return a * b;
     }
 }
